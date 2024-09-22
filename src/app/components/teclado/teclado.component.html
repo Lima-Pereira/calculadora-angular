@@ -1,0 +1,122 @@
+<div class="contanier">
+  <div class="row mt-3">
+    <div class="col-md-12">
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" readonly [value]="value" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-3 d-grid">
+      <button class="btn btn-primary btn-lg btn-block" (click)="setValue('0')">
+        0
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button class="btn btn-primary btn-lg btn-block" (click)="setValue('1')">
+        1
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button class="btn btn-primary btn-lg btn-block" (click)="setValue('2')">
+        2
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button
+        class="btn btn-secondary btn-lg btn-block"
+        (click)="setValue('*')"
+      >
+        *
+      </button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-3 d-grid">
+      <button class="btn btn-primary btn-lg btn-block" (click)="setValue('3')">
+        3
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button class="btn btn-primary btn-lg btn-block" (click)="setValue('4')">
+        4
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button class="btn btn-primary btn-lg btn-block" (click)="setValue('5')">
+        5
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button
+        class="btn btn-secondary btn-lg btn-block"
+        (click)="setValue('/')"
+      >
+        /
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-3 d-grid">
+      <button class="btn btn-primary btn-lg btn-block" (click)="setValue('6')">
+        6
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button class="btn btn-primary btn-lg btn-block" (click)="setValue('7')">
+        7
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button class="btn btn-primary btn-lg btn-block" (click)="setValue('8')">
+        8
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button
+        class="btn btn-secondary btn-lg btn-block"
+        (click)="setValue('-')"
+      >
+        -
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-3 d-grid">
+      <button class="btn btn-primary btn-lg btn-block" (click)="setValue('9')">
+        9
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button class="btn btn-secondary btn-lg btn-block" (click)="clear()">
+        CE
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button class="btn btn-danger btn-lg btn-block" (click)="calculate()">
+        =
+      </button>
+    </div>
+    <div class="col-3 d-grid">
+      <button
+        class="btn btn-secondary btn-lg btn-block"
+        (click)="setValue('+')"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
